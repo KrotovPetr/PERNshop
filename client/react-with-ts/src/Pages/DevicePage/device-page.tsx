@@ -1,13 +1,12 @@
 import * as React from 'react';
 import {FC} from "react";
 
-
-const Shop:FC = () => {
+const DevicePage:FC = () => {
     return (
         <div>
-
+            <h1>Device Page</h1>
         </div>
     );
 };
 
-export default Shop;
+export default DevicePage;

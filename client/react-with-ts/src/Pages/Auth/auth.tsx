@@ -1,12 +1,12 @@
 import * as React from 'react';
 import {FC} from "react";
 
-const Admin:FC = () => {
+const Auth: FC = () => {
     return (
         <div>
-
+            <h1>Auth</h1>
         </div>
     );
 };
 
-export default Admin;
+export default Auth;

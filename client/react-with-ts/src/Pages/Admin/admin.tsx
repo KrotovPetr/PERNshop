@@ -1,11 +1,12 @@
 import * as React from 'react';
 import {FC} from "react";
-const Basket:FC = () => {
+
+const Admin:FC = () => {
     return (
         <div>
-
+            <h1>Admin</h1>
         </div>
     );
 };
 
-export default Basket;
+export default Admin;
