@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import AppRouter from "./Component/AppRouter/AppRouter";
 import {BrowserRouter} from "react-router-dom";
 import {applyMiddleware, compose, createStore} from "redux";
@@ -7,6 +6,10 @@ import {rootReducer} from "./Services/Reducers/stateReducer";
 import thunk from 'redux-thunk';
 import {Provider} from "react-redux";
 import {createRoot} from "react-dom/client";
+import NavBar from "./Component/NavBar/NavBar";
+import indexStyles from './Component/App/app.module.scss';
+import App from "./Component/App/App";
+
 
 
 declare global {
@@ -30,7 +33,7 @@ root.render(
     <React.StrictMode>
         <BrowserRouter>
             <Provider store={store}>
-                <AppRouter />
+                <App/>
             </Provider>
         </BrowserRouter>
     </React.StrictMode>

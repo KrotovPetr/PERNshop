@@ -12,7 +12,7 @@ const AppRouter:FC = () => {
     const {isAuth} = useSelector((store: any):any=>
         ({isAuth: store.stateR.isAuth}), shallowEqual)
 
-    console.log(isAuth);
+    // console.log(isAuth);
     return (
         <Switch>
             {isAuth && authRoutes.map((element: routeObject) =>
